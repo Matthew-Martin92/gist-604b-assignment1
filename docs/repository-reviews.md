@@ -98,26 +98,31 @@ This project does well to keep an updated list of all that has to do with remote
 
 ### Purpose
 What does this project do?  
-
+This project uses synthetic data to evaluate various weather and solar data to assess land suitability for renewable energy sites. 
 
 ### Repository Structure
 What folders or files stand out?  
+This projet includes various charts on the output of some of their synthetic data both in the main folder, as well as a charts folder. It seems as if they are the same charts, just in two different spots. Comparing this structure to the previous three, this one is not as well put together.
 
 
 ### Documentation
 How helpful is the README?  
-
+The readme is helpful however. it walks through the creator's methodology on what scores they used to complete the suitability analysis, what factors they used, and hwo to rund the python code to apply this to my own suitability analysis.
 
 ### Activity
 Is the repository actively maintained?  
+This project seems to be maintained, but on a smaller timeframe. It was created in July 2025, and has a total of 24 commits between now and then. The last commit was done 3 weeks ago in March 2026.
 
 
 ### Key Observation
 One thing this project does well.  
+This project does a good job explain their process and methodologies for a code that will find suitable locations for renewable energy resources. It explains the type of data that would be useful for the project and how much each of these data layers affect the final result.
 
 
 ---
 
 ## Reflection
 
-In 3–5 sentences, explain what you learned about how open source projects are organized.
+In 3–5 sentences, explain what you learned about how open source projects are organized.  
+I learned that there are multiple ways that projects can be organized, depending on the purpose and the goals of the repository. For some of the projeccts that I looked at, a lot of the information about the projet was displayed on the readme.
+
