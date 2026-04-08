@@ -124,5 +124,5 @@ This project does a good job explain their process and methodologies for a code 
 ## Reflection
 
 In 3–5 sentences, explain what you learned about how open source projects are organized.  
-I learned that there are multiple ways that projects can be organized, depending on the purpose and the goals of the repository. For some of the projeccts that I looked at, a lot of the information about the projet was displayed on the readme.
+I learned that there are multiple ways that projects can be organized, depending on the purpose and the goals of the repository. For some of the projeccts that I looked at, a lot of the information about the projet was displayed on the readme. A lot of the repositories also had a folder decdicated to examples that users can follow, and a folder for example data taht cen be used to run through the examples. They also mostly liked to keep the main folder clean and free of clutter, and used a hierarchy of other folders to organize specific files or types.
 
