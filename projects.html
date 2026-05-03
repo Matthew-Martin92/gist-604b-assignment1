@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Projects</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+
+  <!-- Fallback if JS fails -->
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    /* DEBUG: ensure page is visible even if template JS fails */
+    body, html {
+      height: 100%;
+      overflow: auto;
+      background: #111;
+    }
+
+    #wrapper {
+      opacity: 1 !important;
+      position: relative;
+      height: auto;
+    }
+
+    #main {
+      position: relative;
+      padding: 4em 1em;
+    }
+
+    /* simple fallback styling if original CSS doesn't load */
+    .content-box {
+      width: 90%;
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 2em;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .project-card {
+      margin-bottom: 1.5em;
+      padding: 1.2em;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+    }
+
+    a { color: #6cf; }
+  </style>
+</head>
+
+<!-- IMPORTANT: removed is-preload to prevent invisible page issue -->
+<body>
+
+  <div id="wrapper">
+
+    <!-- Optional background layers (can be removed if problematic) -->
+    <div id="bg"></div>
+    <div id="overlay"></div>
+
+    <div id="main">
+
+      <header id="header">
+        <h1>Github Projects</h1>
+        <p>Selected GIS & Development Work with University of Arizona: Open Source GIS </p>
+      </header>
+
+      <section class="content-box">
+
+        <div class="project-card">
+          <h2>QGIS Desktop GIS Projects</h2>
+          <p>This repository demonstrates 10 tutorials that I have completed using the QGIS Software. It lists and links the specific tutorials that give a basic overview on how to use the QGIS Software. This project practices the basic skills used in GIS analysis. It shows how to create a basic map layour for printing, how to work with and change projections, how to import and manage spreadsheets and CSV files, styling vector and raster data, using table and spatial joins and queries, and how to digitize map data.</p>
+          <a href="https://github.com/Matthew-Martin92/gist-604b-assignment2" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Python for GIS</h2>
+          <p>This project contains workable notebooks using Pandas, Geopandas, and Rasterio. 
+            It runs through tutorials in the notebooks to learn how to incorporate Python code 
+            in the repository. This code allows us to work with tabular, vector, and raster GIS data 
+            within the notebooks.</p>
+          <a href="https://github.com/Matthew-Martin92/gist604b-python-sp26" target="_blank">View on GitHub</a>
+        </div>
+
+         <div class="project-card">
+          <h2>PostGIS</h2>
+          <p>This project is a repository for working with spatial data using PostgreSQL and PostGIS. 
+            There are to help teach how to use SQL queries on example GIS datasets. Then I used the sql 
+            files from the sql folder to create my own SQL queries to find the information or satisfy the 
+            workflow needed for each topic.</p>
+          <a href="https://github.com/Matthew-Martin92/gist604b-postgis-sp26" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Open Street Map & PostGIS</h2>
+          <p>This project uses PostGIS and Open Street Map data along with sql queries to apply real 
+            world workflows on the Open Street Map data. I created 3 new queries for 
+            Southern California to find the Post Office Distribution, Protected Area by County, and 
+            the Number of Fuel Stations Near Highways.</p>
+          <a href="https://github.com/Matthew-Martin92/gist604b-osm-postgis-sp26" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>WebGIS & Full-Stack Orchestration</h2>
+          <p>This repository creates and displayes a Webmap on Yucaipa Schools, Streets, and Land Uses in the city 
+            of Yucaipa California. I built a map using Leaflet code with HTML, CSS, and JavaScript to build and 
+            display the webmap. It uses the Yucaipa Land Use, Yucaipa Streets, and Yucaipa Schools JSON files located 
+            in the data folder as the data.</p>
+          <a href="https://github.com/Matthew-Martin92/gist604b-webgis-leaflet-sp26" target="_blank">View on GitHub</a>
+        </div>
+      </section>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="icon solid fa-home">
+              <span class="label">Home</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <!-- JS (optional — if these fail, page still works now) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
