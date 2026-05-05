@@ -545,7 +545,7 @@ input, select, textarea {
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: -6em;
+		top: -1em;
 		vertical-align: middle;
 		width: 90%;
 	}
@@ -1180,6 +1180,79 @@ input, select, textarea {
   border-color: rgba(255, 255, 255, 0.15);
   color: rgb(0, 0, 0);
 }
+
+/* ===== PROJECT CARDS for about me page===== */
+.project-cards-me {
+  margin-bottom: 2em;
+  padding: 1.5em;
+
+  /* better readability on busy backgrounds */
+  background: rgba(0, 0, 0, 0.096);
+
+  border-radius: 10px;
+  
+
+  color: #f5f2f2;
+  font-weight: normal;
+    line-height: 1.0em;
+  margin-bottom: 1em;
+  text-align: left;
+ 
+
+  /* adds separation from background */
+  border: 1px solid rgba(255, 255, 255, 0.781);
+
+  /* subtle depth */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.822);
+
+  transition: transform 0.2s ease, background 0.2s ease;
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(80px);
+}
+.project-cards-me p {
+  font-size: 1.00em;
+  font-weight: 400em;
+  text-shadow: 0 0.4px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  line-height: 1.0em;
+  margin-bottom: 0.0em;
+}
+.project-cards-me h2 {
+  font-size: 1.5em;
+  font-weight: 750;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+.project-cards-me h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 1em;
+  line-height: 1.25em;
+  margin-bottom: 1em;
+}
+.project-cards-me a {
+	
+  color: rgba(50, 27, 252, 0.979);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  
+  
+}
+
+.project-cards-me:hover {
+  transform: translateY(-5px);
+  background: rgba(72, 136, 233, 0.822);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: rgb(0, 0, 0);
+}
 .icon- {
   opacity: 0;
   transform: translateY(-4px);
@@ -1189,4 +1262,12 @@ input, select, textarea {
 #header nav a:hover .icon {
   opacity: 1;
   transform: translateY(0);
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  text-align: left; /* usually better for columns */
+   margin-bottom: 1em;
 }
