@@ -1,16 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Projects</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-<header id="header">
-  <h1>About Me</h1>
-  <p>I am an educator transitioning into GIS analysis, currently studying GIST at the University of Arizona.</p>
-</header>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 
-<section style="text-align:center; max-width: 700px; margin: auto;">
-  <p>
-    I have a background in physics education and a growing skillset in GIS, spatial analysis, and web mapping.
-    My goal is to combine data analysis with geographic insight to solve real-world problems.
-  </p>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 
-  <p>
-    Interests include: environmental mapping, urban planning, and geospatial data visualization.
-  </p>
-</section>
+  <!-- Fallback if JS fails -->
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    /* DEBUG: ensure page is visible even if template JS fails */
+    body, html {
+      height: 100%;
+      overflow: auto;
+      background: #111;
+    }
+
+    #wrapper {
+      opacity: 1 !important;
+      position: relative;
+      height: auto;
+    }
+
+    #main {
+      position: relative;
+      padding: 4em 1em;
+    }
+
+    /* simple fallback styling if original CSS doesn't load */
+    .content-box {
+      width: 90%;
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 2em;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .project-card {
+      margin-bottom: 1.5em;
+      padding: 1.2em;
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+    }
+
+    a { color: #6cf; }
+  </style>
+</head>
+
+<!-- IMPORTANT: removed is-preload to prevent invisible page issue -->
+<body>
+
+  <div id="wrapper">
+
+    <!-- Optional background layers (can be removed if problematic) -->
+    <div id="bg"></div>
+    <div id="overlay"></div>
+
+    <div id="main">
+
+      <header id="header">
+        <h1>Matthew Martin</h1>
+        <img src="assets\css\images\me.png" alt="Picture of Matthew Martin" style="width: 100%; max-width: 350px;">
+      </header>
+
+        <section class="content-box">
+         <div class="project-cards-me">
+            <h2>About Me</h2>
+            <h3>I am an educator transitioning into GIS analysis, currently studying GIST at the University of Arizona. 
+            I graduated from CSU San Bernardino with a Bachelor's degree in Applied Physics. I then became an educator 
+            for  Earth Science, Physics, Astronomy, and AP Physics, currently working at Twentynine Palms High School 
+            in Twentynine Palms, California. I am working on my Masters in Geographic Information Systems at the University 
+            of Arizona. Through this program, I have worked on a variety of projects like Cartography, Vector and Raster 
+            Analysis, Remote Sensing, Python Programming, and Open Source GIS. With the knowledge I have gained from this 
+            program, I hope to use GIS to help make the world a better place for humanity and ecosystems.</h3>
+         </div>
+        </section>
+    
+      
+
+      <section class="content-box">
+        <div class="project-cards-me">
+            <h2>Skills</h2>
+            <div class="two-column">
+             <div>
+                <ul>
+                    <li>Spatial Analysis</li>
+                    <li>Git and Github</li>
+                    <li>QGIS</li>
+                    <li>Python GIS</li>
+                    <li>Jupyter Notebooks</li>
+                    <li>Pandas and Geopandas</li>
+                    <li>PostGIS and PostgreSQL</li>
+                    <li>Open Street Map</li>
+                </ul>
+             </div>
+             <div>
+                <ul>
+                    <li>Leaflet</li>
+                    <li>Remote Sensing </li>
+                    <li>WebGIS Development</li>
+                    <li>Cartography and Map Design</li>
+                    <li>Coordinate Reference Systems</li>
+                    <li>JavaScript (Leaflet)</li>
+                    <li>HTML/CSS</li>
+                 </ul>
+             </div>
+            </div>
+        <h2>Interests Include:</h2>
+          <p>
+             Environmental Mapping, Urban Planning, Suitability Analysis, Water Technology, and Geospatial Data Visualization.
+          </p>
+
+        </div>
+
+      </section>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="icon solid fa-home">
+              <span class="label">Home</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <!-- JS (optional — if these fail, page still works now) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
