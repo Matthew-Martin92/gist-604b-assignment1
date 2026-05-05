@@ -1121,10 +1121,12 @@ input, select, textarea {
 }
 .content-box-main {
 			width: 80%;
+			width: fit-content;
+  			height: fit-content;
 			margin: 0em auto;
 			padding: 1em;
-			background: rgba(19, 149, 181, 0);
-			border: 5px rgba(255, 255, 255, 0);
+			background: rgba(19, 149, 181, 0.548);
+			border: 5px rgba(255, 255, 255, 0.295);
 			border-radius: 100px;
 			border-style: groove;
 		
