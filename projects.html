@@ -75,7 +75,16 @@
 
         <div class="project-card">
           <h2>QGIS Desktop GIS Projects</h2>
-          <p>This repository demonstrates 10 tutorials that I have completed using the QGIS Software. It lists and links the specific tutorials that give a basic overview on how to use the QGIS Software. This project practices the basic skills used in GIS analysis. It shows how to create a basic map layour for printing, how to work with and change projections, how to import and manage spreadsheets and CSV files, styling vector and raster data, using table and spatial joins and queries, and how to digitize map data.</p>
+          <p>This repository demonstrates 10 tutorials that I have completed using the QGIS Software. 
+            It lists and links the specific tutorials that give a basic overview on how to use the QGIS 
+            Software. This project practices the basic skills used in GIS analysis. It shows how to create 
+            a basic map layour for printing, how to work with and change projections, how to import and 
+            manage spreadsheets and CSV files, styling vector and raster data, using table and spatial 
+            joins and queries, and how to digitize map data.</p>
+        <img src="assets\css\images\tablejoins.png" alt="map of california showing table joins output" 
+            style="width: 100%; max-width: 200px;"
+            class="clickable-img"
+            onclick="openModal(this.src)">
           <a href="https://github.com/Matthew-Martin92/gist-604b-assignment2" target="_blank">View on GitHub</a>
         </div>
 
@@ -85,6 +94,10 @@
             It runs through tutorials in the notebooks to learn how to incorporate Python code 
             in the repository. This code allows us to work with tabular, vector, and raster GIS data 
             within the notebooks.</p>
+            <img src="assets\css\images\geopandas_output.png" alt="geopandas output of the western us ecoregions" 
+            style="width: 100%; max-width: 300px;"
+            class="clickable-img"
+            onclick="openModal(this.src)">
           <a href="https://github.com/Matthew-Martin92/gist604b-python-sp26" target="_blank">View on GitHub</a>
         </div>
 
@@ -103,6 +116,18 @@
             world workflows on the Open Street Map data. I created 3 new queries for 
             Southern California to find the Post Office Distribution, Protected Area by County, and 
             the Number of Fuel Stations Near Highways.</p>
+             <div class="two-column">
+             <div>
+                <img src="assets\css\images\protected_areas.png" alt="Map of Protected Areas per county" style="width: 100%; max-width: 300px; "
+                    class="clickable-img"
+                    onclick="openModal(this.src)">
+             </div>
+             <div>
+                <img src="assets\css\images\gas_stations.png" alt="Chart of Gas Stations Near Highways" style="width: 100%; max-width: 300px;"
+                    class="clickable-img"
+                    onclick="openModal(this.src)">
+             </div>
+            </div>
           <a href="https://github.com/Matthew-Martin92/gist604b-osm-postgis-sp26" target="_blank">View on GitHub</a>
         </div>
 
@@ -112,6 +137,9 @@
             of Yucaipa California. I built a map using Leaflet code with HTML, CSS, and JavaScript to build and 
             display the webmap. It uses the Yucaipa Land Use, Yucaipa Streets, and Yucaipa Schools JSON files located 
             in the data folder as the data.</p>
+            <img src="assets\css\images\yucaipamap.png" alt="Map of Yucaipa" style="width: 100%; max-width: 300px;"
+                    class="clickable-img"
+                    onclick="openModal(this.src)">
           <a href="https://github.com/Matthew-Martin92/gist604b-webgis-leaflet-sp26" target="_blank">View on GitHub</a>
           <a href="https://matthew-martin92.github.io/gist604b-webgis-leaflet-sp26/" target="_blank">View Leaflet Map</a>
         </div>
@@ -130,13 +158,24 @@
     </div>
 
   </div>
-
+    <dialog id="imgModal" onclick="this.close()">
+  <img id="modalImg" src="" alt="Enlarged image">
+    </dialog>
   <!-- JS (optional — if these fail, page still works now) -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+    <script>
+  function openModal(src) {
+    const modal = document.getElementById("imgModal");
+    const img = document.getElementById("modalImg");
+
+    img.src = src;
+    modal.showModal();
+  }
+    </script>
 
 </body>
 </html>
