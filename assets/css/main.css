@@ -1121,7 +1121,6 @@ input, select, textarea {
 }
 .content-box-main {
 			width: 80%;
-			max-width: 450px;
 			margin: 0em auto;
 			padding: 1em;
 			background: rgba(19, 149, 181, 0);
